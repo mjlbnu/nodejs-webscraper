@@ -1,6 +1,5 @@
 # NodeJS Webscraper
-Demo for showing how to scrape data and get backend data to the frontend. This repository is for the video tutorial [here](https://youtu.be/-3lqUHeZs_0)
-
+Demo for showing how to scrape data and get backend data to the frontend. This repository is inspired by the video tutorial from Ania Kubow [here](https://youtu.be/-3lqUHeZs_0)
 
 ## To run this project
 
@@ -12,19 +11,27 @@ You can run this project on your local machine. Just pull it down and do the fol
 
 ### Start the Project
 
-2. Now run the server:
+### This project uses two npm scripts for different purposes:
+
+2. Start the Node.js Application (server): This script uses nodemon to automatically restart the application whenever changes are detected in the source code (src/index.js).
 
 ```bash
-npm run start
+npm start
 ```
 
-3. Open [http://localhost:8000/results](http://localhost:8000/results) with your browser to see the results of the scrape in your terminal.
+3. Run Tailwind CSS in Development Mode: This script uses Tailwind CSS to process styles from ./src/input.css and outputs them to ./dist/output.css. The --watch flag enables Tailwind to watch for changes in the input file and update the output file accordingly.
 
-4. Finally, open the index.html file in your browser to see the results showing up.
+```bash
+npm run dev
+```
+
+4. Open [http://localhost:8000/results](http://localhost:8000/results) with your browser to see the results of the scrape in your terminal.
+
+5. Finally, open the index.html file in your browser to see the results showing up.
 
 ## MIT Licence
 
-Copyright (c) 2020 Ania Kubow
+Copyright (c) 2023 Marcio José Lisboa
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
 
